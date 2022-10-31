@@ -1,0 +1,9 @@
+<h1>Welcome</h1>
+
+<% @gossips.each do |x| %>
+<p>name : <%= x.user.first_name%><br>
+title: <%= x.title%><br>
+<a href="/gossips/<%=x.id%>">Voir le gossip</a>
+
+</p>
+<% end %>

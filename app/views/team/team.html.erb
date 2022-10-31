@@ -1,0 +1,9 @@
+<h1>Nous voila enfin dans team eheh </h1>
+
+    <% gossips.each_with_index do |gossip, index| %>
+        <p>
+          <strong><%= gossip.author %></strong><br/>
+          <%= gossip.content %>
+        </p>
+        <p><a href="/gossips/<%= index%>">Plus d'informations</a></p>
+      <% end %>
